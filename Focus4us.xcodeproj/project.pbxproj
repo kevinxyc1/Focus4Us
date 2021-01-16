@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EAAE42DE25B344700029E5C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE42DD25B344700029E5C9 /* AppDelegate.swift */; };
+		EAAE42E025B344700029E5C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE42DF25B344700029E5C9 /* SceneDelegate.swift */; };
+		EAAE42E225B344700029E5C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE42E125B344700029E5C9 /* ViewController.swift */; };
+		EAAE42E525B344700029E5C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAAE42E325B344700029E5C9 /* Main.storyboard */; };
+		EAAE42E825B344700029E5C9 /* Focus4us.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EAAE42E625B344700029E5C9 /* Focus4us.xcdatamodeld */; };
+		EAAE42EA25B344710029E5C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAAE42E925B344710029E5C9 /* Assets.xcassets */; };
+		EAAE42ED25B344710029E5C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAAE42EB25B344710029E5C9 /* LaunchScreen.storyboard */; };
+		EAAE42F825B344710029E5C9 /* Focus4usTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE42F725B344710029E5C9 /* Focus4usTests.swift */; };
+		EAAE430325B344710029E5C9 /* Focus4usUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE430225B344710029E5C9 /* Focus4usUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAAE42F425B344710029E5C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAAE42D225B344700029E5C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAE42D925B344700029E5C9;
+			remoteInfo = Focus4us;
+		};
+		EAAE42FF25B344710029E5C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAAE42D225B344700029E5C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAE42D925B344700029E5C9;
+			remoteInfo = Focus4us;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EAAE42DA25B344700029E5C9 /* Focus4us.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Focus4us.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAAE42DD25B344700029E5C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAAE42DF25B344700029E5C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EAAE42E125B344700029E5C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EAAE42E425B344700029E5C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAAE42E725B344700029E5C9 /* Focus4us.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Focus4us.xcdatamodel; sourceTree = "<group>"; };
+		EAAE42E925B344710029E5C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAAE42EC25B344710029E5C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EAAE42EE25B344710029E5C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAAE42F325B344710029E5C9 /* Focus4usTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Focus4usTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAAE42F725B344710029E5C9 /* Focus4usTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Focus4usTests.swift; sourceTree = "<group>"; };
+		EAAE42F925B344710029E5C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAAE42FE25B344710029E5C9 /* Focus4usUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Focus4usUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAAE430225B344710029E5C9 /* Focus4usUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Focus4usUITests.swift; sourceTree = "<group>"; };
+		EAAE430425B344710029E5C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAAE42D725B344700029E5C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAAE42F025B344710029E5C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAAE42FB25B344710029E5C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAAE42D125B344700029E5C9 = {
+			isa = PBXGroup;
+			children = (
+				EAAE42DC25B344700029E5C9 /* Focus4us */,
+				EAAE42F625B344710029E5C9 /* Focus4usTests */,
+				EAAE430125B344710029E5C9 /* Focus4usUITests */,
+				EAAE42DB25B344700029E5C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAAE42DB25B344700029E5C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAAE42DA25B344700029E5C9 /* Focus4us.app */,
+				EAAE42F325B344710029E5C9 /* Focus4usTests.xctest */,
+				EAAE42FE25B344710029E5C9 /* Focus4usUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAAE42DC25B344700029E5C9 /* Focus4us */ = {
+			isa = PBXGroup;
+			children = (
+				EAAE42DD25B344700029E5C9 /* AppDelegate.swift */,
+				EAAE42DF25B344700029E5C9 /* SceneDelegate.swift */,
+				EAAE42E125B344700029E5C9 /* ViewController.swift */,
+				EAAE42E325B344700029E5C9 /* Main.storyboard */,
+				EAAE42E925B344710029E5C9 /* Assets.xcassets */,
+				EAAE42EB25B344710029E5C9 /* LaunchScreen.storyboard */,
+				EAAE42EE25B344710029E5C9 /* Info.plist */,
+				EAAE42E625B344700029E5C9 /* Focus4us.xcdatamodeld */,
+			);
+			path = Focus4us;
+			sourceTree = "<group>";
+		};
+		EAAE42F625B344710029E5C9 /* Focus4usTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAAE42F725B344710029E5C9 /* Focus4usTests.swift */,
+				EAAE42F925B344710029E5C9 /* Info.plist */,
+			);
+			path = Focus4usTests;
+			sourceTree = "<group>";
+		};
+		EAAE430125B344710029E5C9 /* Focus4usUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EAAE430225B344710029E5C9 /* Focus4usUITests.swift */,
+				EAAE430425B344710029E5C9 /* Info.plist */,
+			);
+			path = Focus4usUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAAE42D925B344700029E5C9 /* Focus4us */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAAE430725B344710029E5C9 /* Build configuration list for PBXNativeTarget "Focus4us" */;
+			buildPhases = (
+				EAAE42D625B344700029E5C9 /* Sources */,
+				EAAE42D725B344700029E5C9 /* Frameworks */,
+				EAAE42D825B344700029E5C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Focus4us;
+			productName = Focus4us;
+			productReference = EAAE42DA25B344700029E5C9 /* Focus4us.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAAE42F225B344710029E5C9 /* Focus4usTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAAE430A25B344710029E5C9 /* Build configuration list for PBXNativeTarget "Focus4usTests" */;
+			buildPhases = (
+				EAAE42EF25B344710029E5C9 /* Sources */,
+				EAAE42F025B344710029E5C9 /* Frameworks */,
+				EAAE42F125B344710029E5C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAAE42F525B344710029E5C9 /* PBXTargetDependency */,
+			);
+			name = Focus4usTests;
+			productName = Focus4usTests;
+			productReference = EAAE42F325B344710029E5C9 /* Focus4usTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EAAE42FD25B344710029E5C9 /* Focus4usUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAAE430D25B344710029E5C9 /* Build configuration list for PBXNativeTarget "Focus4usUITests" */;
+			buildPhases = (
+				EAAE42FA25B344710029E5C9 /* Sources */,
+				EAAE42FB25B344710029E5C9 /* Frameworks */,
+				EAAE42FC25B344710029E5C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAAE430025B344710029E5C9 /* PBXTargetDependency */,
+			);
+			name = Focus4usUITests;
+			productName = Focus4usUITests;
+			productReference = EAAE42FE25B344710029E5C9 /* Focus4usUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAAE42D225B344700029E5C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					EAAE42D925B344700029E5C9 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					EAAE42F225B344710029E5C9 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = EAAE42D925B344700029E5C9;
+					};
+					EAAE42FD25B344710029E5C9 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = EAAE42D925B344700029E5C9;
+					};
+				};
+			};
+			buildConfigurationList = EAAE42D525B344700029E5C9 /* Build configuration list for PBXProject "Focus4us" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAAE42D125B344700029E5C9;
+			productRefGroup = EAAE42DB25B344700029E5C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAAE42D925B344700029E5C9 /* Focus4us */,
+				EAAE42F225B344710029E5C9 /* Focus4usTests */,
+				EAAE42FD25B344710029E5C9 /* Focus4usUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAAE42D825B344700029E5C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAAE42ED25B344710029E5C9 /* LaunchScreen.storyboard in Resources */,
+				EAAE42EA25B344710029E5C9 /* Assets.xcassets in Resources */,
+				EAAE42E525B344700029E5C9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAAE42F125B344710029E5C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAAE42FC25B344710029E5C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAAE42D625B344700029E5C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAAE42E225B344700029E5C9 /* ViewController.swift in Sources */,
+				EAAE42E825B344700029E5C9 /* Focus4us.xcdatamodeld in Sources */,
+				EAAE42DE25B344700029E5C9 /* AppDelegate.swift in Sources */,
+				EAAE42E025B344700029E5C9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAAE42EF25B344710029E5C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAAE42F825B344710029E5C9 /* Focus4usTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAAE42FA25B344710029E5C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAAE430325B344710029E5C9 /* Focus4usUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAAE42F525B344710029E5C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAAE42D925B344700029E5C9 /* Focus4us */;
+			targetProxy = EAAE42F425B344710029E5C9 /* PBXContainerItemProxy */;
+		};
+		EAAE430025B344710029E5C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAAE42D925B344700029E5C9 /* Focus4us */;
+			targetProxy = EAAE42FF25B344710029E5C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAAE42E325B344700029E5C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAAE42E425B344700029E5C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EAAE42EB25B344710029E5C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAAE42EC25B344710029E5C9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAAE430525B344710029E5C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EAAE430625B344710029E5C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAAE430825B344710029E5C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DVB3XF796Z;
+				INFOPLIST_FILE = Focus4us/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raghavkharbanda.Focus4us;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAAE430925B344710029E5C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DVB3XF796Z;
+				INFOPLIST_FILE = Focus4us/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raghavkharbanda.Focus4us;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EAAE430B25B344710029E5C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DVB3XF796Z;
+				INFOPLIST_FILE = Focus4usTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raghavkharbanda.Focus4usTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Focus4us.app/Focus4us";
+			};
+			name = Debug;
+		};
+		EAAE430C25B344710029E5C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DVB3XF796Z;
+				INFOPLIST_FILE = Focus4usTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raghavkharbanda.Focus4usTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Focus4us.app/Focus4us";
+			};
+			name = Release;
+		};
+		EAAE430E25B344710029E5C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DVB3XF796Z;
+				INFOPLIST_FILE = Focus4usUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raghavkharbanda.Focus4usUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Focus4us;
+			};
+			name = Debug;
+		};
+		EAAE430F25B344710029E5C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DVB3XF796Z;
+				INFOPLIST_FILE = Focus4usUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raghavkharbanda.Focus4usUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Focus4us;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAAE42D525B344700029E5C9 /* Build configuration list for PBXProject "Focus4us" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAAE430525B344710029E5C9 /* Debug */,
+				EAAE430625B344710029E5C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAAE430725B344710029E5C9 /* Build configuration list for PBXNativeTarget "Focus4us" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAAE430825B344710029E5C9 /* Debug */,
+				EAAE430925B344710029E5C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAAE430A25B344710029E5C9 /* Build configuration list for PBXNativeTarget "Focus4usTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAAE430B25B344710029E5C9 /* Debug */,
+				EAAE430C25B344710029E5C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAAE430D25B344710029E5C9 /* Build configuration list for PBXNativeTarget "Focus4usUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAAE430E25B344710029E5C9 /* Debug */,
+				EAAE430F25B344710029E5C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EAAE42E625B344700029E5C9 /* Focus4us.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EAAE42E725B344700029E5C9 /* Focus4us.xcdatamodel */,
+			);
+			currentVersion = EAAE42E725B344700029E5C9 /* Focus4us.xcdatamodel */;
+			path = Focus4us.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EAAE42D225B344700029E5C9 /* Project object */;
+}
