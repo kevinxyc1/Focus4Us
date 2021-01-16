@@ -31,6 +31,7 @@
 		EAAE433C25B35CDB0029E5C9 /* GradientCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE432F25B35CDB0029E5C9 /* GradientCircularSlider.swift */; };
 		EAAE433D25B35CDB0029E5C9 /* GradientCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE432F25B35CDB0029E5C9 /* GradientCircularSlider.swift */; };
 		EAAE433E25B35CDB0029E5C9 /* GradientCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE432F25B35CDB0029E5C9 /* GradientCircularSlider.swift */; };
+		EAAE434825B39C540029E5C9 /* MinutesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE434725B39C540029E5C9 /* MinutesManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		EAAE432D25B35CDB0029E5C9 /* CircularSliderHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularSliderHandle.swift; sourceTree = "<group>"; };
 		EAAE432E25B35CDB0029E5C9 /* CircularSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularSlider.swift; sourceTree = "<group>"; };
 		EAAE432F25B35CDB0029E5C9 /* GradientCircularSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientCircularSlider.swift; sourceTree = "<group>"; };
+		EAAE434725B39C540029E5C9 /* MinutesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinutesManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				EAAE432A25B35CDB0029E5C9 /* CircularSlider */,
 				EAAE42DD25B344700029E5C9 /* AppDelegate.swift */,
 				EAAE42DF25B344700029E5C9 /* SceneDelegate.swift */,
+				EAAE434625B39C330029E5C9 /* Models */,
 				EAAE42E125B344700029E5C9 /* ViewController.swift */,
 				EAAE42E325B344700029E5C9 /* Main.storyboard */,
 				EAAE42E925B344710029E5C9 /* Assets.xcassets */,
@@ -162,6 +165,14 @@
 				EAAE432F25B35CDB0029E5C9 /* GradientCircularSlider.swift */,
 			);
 			path = CircularSlider;
+			sourceTree = "<group>";
+		};
+		EAAE434625B39C330029E5C9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EAAE434725B39C540029E5C9 /* MinutesManager.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +308,7 @@
 				EAAE433625B35CDB0029E5C9 /* CircularSliderHandle.swift in Sources */,
 				EAAE433C25B35CDB0029E5C9 /* GradientCircularSlider.swift in Sources */,
 				EAAE42E225B344700029E5C9 /* ViewController.swift in Sources */,
+				EAAE434825B39C540029E5C9 /* MinutesManager.swift in Sources */,
 				EAAE42E825B344700029E5C9 /* Focus4us.xcdatamodeld in Sources */,
 				EAAE433325B35CDB0029E5C9 /* DoubleHandleCircularSlider.swift in Sources */,
 				EAAE433025B35CDB0029E5C9 /* CircularTrig.swift in Sources */,

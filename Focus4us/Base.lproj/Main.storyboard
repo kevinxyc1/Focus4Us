@@ -69,6 +69,9 @@
                                                 <rect key="frame" x="0.0" y="37" width="155" height="38"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                 <state key="normal" title="Create Time Plan"/>
+                                                <connections>
+                                                    <action selector="CalcTime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vyy-MM-g0Y"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -95,21 +98,42 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Wh-0t-XY8" userLabel="LOWER_PORTION">
+                                <rect key="frame" x="0.0" y="430" width="414" height="432"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kki-K7-M02" userLabel="PLAN">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="432"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="kki-K7-M02" firstAttribute="leading" secondItem="1Wh-0t-XY8" secondAttribute="leading" id="E3M-Xu-m5f"/>
+                                    <constraint firstAttribute="bottom" secondItem="kki-K7-M02" secondAttribute="bottom" id="QcZ-B3-f0B"/>
+                                    <constraint firstAttribute="trailing" secondItem="kki-K7-M02" secondAttribute="trailing" id="Vt5-MF-4ks"/>
+                                    <constraint firstItem="kki-K7-M02" firstAttribute="top" secondItem="1Wh-0t-XY8" secondAttribute="top" id="c8s-BH-7GC"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Wh-0t-XY8" secondAttribute="trailing" id="34r-V9-2vg"/>
                             <constraint firstItem="l2z-GF-ScI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="74c-dh-raP"/>
+                            <constraint firstItem="1Wh-0t-XY8" firstAttribute="top" secondItem="l2z-GF-ScI" secondAttribute="bottom" id="8Sy-AZ-I0t"/>
                             <constraint firstItem="l2z-GF-ScI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="DGF-qZ-ZJZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1Wh-0t-XY8" secondAttribute="bottom" id="KJp-gK-fHe"/>
                             <constraint firstItem="n2D-Fd-aSZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PWl-hf-4ue"/>
                             <constraint firstItem="n2D-Fd-aSZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="UVq-1F-DnC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l2z-GF-ScI" secondAttribute="trailing" constant="25" id="ceG-qe-GM2"/>
                             <constraint firstItem="n2D-Fd-aSZ" firstAttribute="bottom" secondItem="l2z-GF-ScI" secondAttribute="bottom" constant="-60" id="dYA-rg-ZC5"/>
+                            <constraint firstItem="1Wh-0t-XY8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gGA-EX-Xvh"/>
                             <constraint firstItem="n2D-Fd-aSZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="saU-YT-0Hb"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="calcButon" destination="Ve4-Mz-qS7" id="UPd-2Z-3fK"/>
+                        <outlet property="planView" destination="kki-K7-M02" id="esu-YE-WkY"/>
                         <outlet property="sliderView" destination="6eh-Gx-AB6" id="UEh-jL-0Yh"/>
                         <outlet property="timelabel" destination="8Ns-pc-9Bw" id="IZJ-ci-OO1"/>
                     </connections>
@@ -122,6 +146,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

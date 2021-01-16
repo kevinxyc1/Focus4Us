@@ -6,26 +6,30 @@
 //
 
 import UIKit
+import QuartzCore
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var sliderView: UIView!
     @IBOutlet weak var timelabel: UILabel!
     @IBOutlet weak var calcButon: UIButton!
+    @IBOutlet weak var planView: UIView!
     
-    // function to get slider values
-    func GetTimeVal(val: Float) -> String{
-        let timeArr = [30,60,90,120,150,180,210,240,270,300,330,360]
-        let time = Int((val/100)*11)
-        let val1 = timeArr[time]
-        let hrs = Int(val1/60)
-        let min = Int(val1%60)
-        if hrs == 0 { return "\(min) M"}
-        else { return "\(hrs) H \(min) M"}
-        
-    }
+    // this manages the minutes
+    var minutesManager = MinutesManager()
+    
+    // Variables for appearing time
+    let buttonPadding:CGFloat = 10
+    var xOffset:CGFloat = 10
+    var scView:UIScrollView?
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Calculate button color
+        calcButon.setTitleColor(UIColor(red: 15.0/255, green: 76.0/255, blue: 129.0/255, alpha: 1.0), for: .normal)
         
         // CODE FOR SLIDER
         //---------------------------------------------------------------------------------------------
@@ -50,13 +54,65 @@ class ViewController: UIViewController {
         circularSlider.transform = circularSlider.getRotationalTransform()
         //---------------------------------------------------------------------------------------------
         
+        scView = UIScrollView(frame: CGRect(x: 0, y: 30, width: view.bounds.width, height: 250))
+        planView.addSubview(scView!)
+        scView!.backgroundColor = UIColor.clear
+            scView!.translatesAutoresizingMaskIntoConstraints = false
+
+            
+        
+        
+        
+        
+        
+        
     }
     
     // SLIDER TRIGGER FUNCTION
     @objc func valueChanged(_ slider: CircularSlider) {
-        timelabel.text = GetTimeVal(val: slider.currentValue)
+        timelabel.text = minutesManager.GetTimeVal(val: slider.currentValue)
     }
 
+    
+    // When button is pressed to calculate time
+    @IBAction func CalcTime(_ sender: UIButton) {
+        
+//        planView.subviews.forEach({ $0.removeFromSuperview() })
+        scView = UIScrollView(frame: CGRect(x: 0, y: 30, width: view.bounds.width, height: 250))
+        planView.addSubview(scView!)
+        scView!.backgroundColor = UIColor.clear
+            scView!.translatesAutoresizingMaskIntoConstraints = false
+        
+        // change the name of the button
+        calcButon.setTitle("Calculate Again", for: .normal)
+        
+        let arr = minutesManager.GetArr()
+        print(arr.count)
+        
+        for i in 0 ... arr.count-1 {
+            let card = UILabel()
+            card.tag = i
+            card.backgroundColor = UIColor(red: 233.0/255, green: 244.0/255, blue: 255.0/255, alpha: 1.0)
+            card.text = arr[i]
+            card.font = UIFont(name: "Futura", size: 20)
+            card.layer.cornerRadius = 20
+            card.textColor = UIColor(red: 1.0/255, green: 46.0/255, blue: 84.0/255, alpha: 1.0)
+            card.layer.masksToBounds = true
+            card.textAlignment = NSTextAlignment.center;
+            card.numberOfLines = 0
+            //button.addTarget(self, action: #selector(btnTouch), for: UIControlEvents.touchUpInside)
 
+            card.frame = CGRect(x: xOffset, y: CGFloat(buttonPadding), width: 90, height: 160.0)
+
+            xOffset = xOffset + CGFloat(buttonPadding) + card.frame.size.width
+            scView!.addSubview(card)
+
+
+        }
+       scView!.contentSize = CGSize(width: xOffset, height: scView!.frame.height)
+        
+        
+    }
+    
 }
 
