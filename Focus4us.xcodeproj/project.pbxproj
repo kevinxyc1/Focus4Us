@@ -16,6 +16,21 @@
 		EAAE42ED25B344710029E5C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAAE42EB25B344710029E5C9 /* LaunchScreen.storyboard */; };
 		EAAE42F825B344710029E5C9 /* Focus4usTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE42F725B344710029E5C9 /* Focus4usTests.swift */; };
 		EAAE430325B344710029E5C9 /* Focus4usUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE430225B344710029E5C9 /* Focus4usUITests.swift */; };
+		EAAE433025B35CDB0029E5C9 /* CircularTrig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE432B25B35CDB0029E5C9 /* CircularTrig.swift */; };
+		EAAE433125B35CDB0029E5C9 /* CircularTrig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE432B25B35CDB0029E5C9 /* CircularTrig.swift */; };
+		EAAE433225B35CDB0029E5C9 /* CircularTrig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE432B25B35CDB0029E5C9 /* CircularTrig.swift */; };
+		EAAE433325B35CDB0029E5C9 /* DoubleHandleCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE432C25B35CDB0029E5C9 /* DoubleHandleCircularSlider.swift */; };
+		EAAE433425B35CDB0029E5C9 /* DoubleHandleCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE432C25B35CDB0029E5C9 /* DoubleHandleCircularSlider.swift */; };
+		EAAE433525B35CDB0029E5C9 /* DoubleHandleCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE432C25B35CDB0029E5C9 /* DoubleHandleCircularSlider.swift */; };
+		EAAE433625B35CDB0029E5C9 /* CircularSliderHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE432D25B35CDB0029E5C9 /* CircularSliderHandle.swift */; };
+		EAAE433725B35CDB0029E5C9 /* CircularSliderHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE432D25B35CDB0029E5C9 /* CircularSliderHandle.swift */; };
+		EAAE433825B35CDB0029E5C9 /* CircularSliderHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE432D25B35CDB0029E5C9 /* CircularSliderHandle.swift */; };
+		EAAE433925B35CDB0029E5C9 /* CircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE432E25B35CDB0029E5C9 /* CircularSlider.swift */; };
+		EAAE433A25B35CDB0029E5C9 /* CircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE432E25B35CDB0029E5C9 /* CircularSlider.swift */; };
+		EAAE433B25B35CDB0029E5C9 /* CircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE432E25B35CDB0029E5C9 /* CircularSlider.swift */; };
+		EAAE433C25B35CDB0029E5C9 /* GradientCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE432F25B35CDB0029E5C9 /* GradientCircularSlider.swift */; };
+		EAAE433D25B35CDB0029E5C9 /* GradientCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE432F25B35CDB0029E5C9 /* GradientCircularSlider.swift */; };
+		EAAE433E25B35CDB0029E5C9 /* GradientCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE432F25B35CDB0029E5C9 /* GradientCircularSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +66,11 @@
 		EAAE42FE25B344710029E5C9 /* Focus4usUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Focus4usUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAAE430225B344710029E5C9 /* Focus4usUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Focus4usUITests.swift; sourceTree = "<group>"; };
 		EAAE430425B344710029E5C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAAE432B25B35CDB0029E5C9 /* CircularTrig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularTrig.swift; sourceTree = "<group>"; };
+		EAAE432C25B35CDB0029E5C9 /* DoubleHandleCircularSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleHandleCircularSlider.swift; sourceTree = "<group>"; };
+		EAAE432D25B35CDB0029E5C9 /* CircularSliderHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularSliderHandle.swift; sourceTree = "<group>"; };
+		EAAE432E25B35CDB0029E5C9 /* CircularSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularSlider.swift; sourceTree = "<group>"; };
+		EAAE432F25B35CDB0029E5C9 /* GradientCircularSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientCircularSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +121,7 @@
 		EAAE42DC25B344700029E5C9 /* Focus4us */ = {
 			isa = PBXGroup;
 			children = (
+				EAAE432A25B35CDB0029E5C9 /* CircularSlider */,
 				EAAE42DD25B344700029E5C9 /* AppDelegate.swift */,
 				EAAE42DF25B344700029E5C9 /* SceneDelegate.swift */,
 				EAAE42E125B344700029E5C9 /* ViewController.swift */,
@@ -129,6 +150,18 @@
 				EAAE430425B344710029E5C9 /* Info.plist */,
 			);
 			path = Focus4usUITests;
+			sourceTree = "<group>";
+		};
+		EAAE432A25B35CDB0029E5C9 /* CircularSlider */ = {
+			isa = PBXGroup;
+			children = (
+				EAAE432B25B35CDB0029E5C9 /* CircularTrig.swift */,
+				EAAE432C25B35CDB0029E5C9 /* DoubleHandleCircularSlider.swift */,
+				EAAE432D25B35CDB0029E5C9 /* CircularSliderHandle.swift */,
+				EAAE432E25B35CDB0029E5C9 /* CircularSlider.swift */,
+				EAAE432F25B35CDB0029E5C9 /* GradientCircularSlider.swift */,
+			);
+			path = CircularSlider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +294,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAAE433625B35CDB0029E5C9 /* CircularSliderHandle.swift in Sources */,
+				EAAE433C25B35CDB0029E5C9 /* GradientCircularSlider.swift in Sources */,
 				EAAE42E225B344700029E5C9 /* ViewController.swift in Sources */,
 				EAAE42E825B344700029E5C9 /* Focus4us.xcdatamodeld in Sources */,
+				EAAE433325B35CDB0029E5C9 /* DoubleHandleCircularSlider.swift in Sources */,
+				EAAE433025B35CDB0029E5C9 /* CircularTrig.swift in Sources */,
 				EAAE42DE25B344700029E5C9 /* AppDelegate.swift in Sources */,
 				EAAE42E025B344700029E5C9 /* SceneDelegate.swift in Sources */,
+				EAAE433925B35CDB0029E5C9 /* CircularSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +310,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAAE433125B35CDB0029E5C9 /* CircularTrig.swift in Sources */,
+				EAAE433D25B35CDB0029E5C9 /* GradientCircularSlider.swift in Sources */,
+				EAAE433725B35CDB0029E5C9 /* CircularSliderHandle.swift in Sources */,
 				EAAE42F825B344710029E5C9 /* Focus4usTests.swift in Sources */,
+				EAAE433A25B35CDB0029E5C9 /* CircularSlider.swift in Sources */,
+				EAAE433425B35CDB0029E5C9 /* DoubleHandleCircularSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +323,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAAE433225B35CDB0029E5C9 /* CircularTrig.swift in Sources */,
+				EAAE433E25B35CDB0029E5C9 /* GradientCircularSlider.swift in Sources */,
+				EAAE433825B35CDB0029E5C9 /* CircularSliderHandle.swift in Sources */,
 				EAAE430325B344710029E5C9 /* Focus4usUITests.swift in Sources */,
+				EAAE433B25B35CDB0029E5C9 /* CircularSlider.swift in Sources */,
+				EAAE433525B35CDB0029E5C9 /* DoubleHandleCircularSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

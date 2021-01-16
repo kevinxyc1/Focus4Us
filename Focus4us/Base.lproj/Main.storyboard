@@ -1,24 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Focus4us" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n2D-Fd-aSZ" userLabel="BGVIEW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="370"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xdo-Ql-nie">
+                                        <rect key="frame" x="138" y="0.0" width="276" height="370"/>
+                                        <color key="backgroundColor" red="0.058823529411764705" green="0.29803921568627451" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="276" id="d3K-AH-I5J"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.9137254901960784" green="0.95686274509803915" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="Xdo-Ql-nie" firstAttribute="top" secondItem="n2D-Fd-aSZ" secondAttribute="top" id="ESb-xC-DJg"/>
+                                    <constraint firstAttribute="height" constant="370" id="bi6-5f-nkH"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xdo-Ql-nie" secondAttribute="trailing" id="ded-Si-jlM"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xdo-Ql-nie" secondAttribute="bottom" id="uKw-ic-jSm"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l2z-GF-ScI" userLabel="SLIDER_AND_BUTON">
+                                <rect key="frame" x="25" y="94" width="364" height="336"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6eh-Gx-AB6" userLabel="TIME SLIDER">
+                                        <rect key="frame" x="32" y="18" width="300" height="300"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="OgZ-h4-7rq"/>
+                                            <constraint firstAttribute="width" constant="300" id="XaD-mF-Ocm"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Fd1-fx-zOJ">
+                                        <rect key="frame" x="104.5" y="130.5" width="155" height="75"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 M" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ns-pc-9Bw">
+                                                <rect key="frame" x="0.0" y="0.0" width="155" height="29"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ve4-Mz-qS7">
+                                                <rect key="frame" x="0.0" y="37" width="155" height="38"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                                <state key="normal" title="Create Time Plan"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="6eh-Gx-AB6" firstAttribute="centerX" secondItem="l2z-GF-ScI" secondAttribute="centerX" id="DVj-Yy-Uis"/>
+                                    <constraint firstItem="6eh-Gx-AB6" firstAttribute="centerY" secondItem="l2z-GF-ScI" secondAttribute="centerY" id="Gv1-y3-aWB"/>
+                                    <constraint firstItem="Fd1-fx-zOJ" firstAttribute="centerY" secondItem="l2z-GF-ScI" secondAttribute="centerY" id="IWa-5y-ICE"/>
+                                    <constraint firstItem="Fd1-fx-zOJ" firstAttribute="centerX" secondItem="l2z-GF-ScI" secondAttribute="centerX" id="cyQ-Ly-JT6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="3" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="l2z-GF-ScI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="74c-dh-raP"/>
+                            <constraint firstItem="l2z-GF-ScI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="DGF-qZ-ZJZ"/>
+                            <constraint firstItem="n2D-Fd-aSZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PWl-hf-4ue"/>
+                            <constraint firstItem="n2D-Fd-aSZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="UVq-1F-DnC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l2z-GF-ScI" secondAttribute="trailing" constant="25" id="ceG-qe-GM2"/>
+                            <constraint firstItem="n2D-Fd-aSZ" firstAttribute="bottom" secondItem="l2z-GF-ScI" secondAttribute="bottom" constant="-60" id="dYA-rg-ZC5"/>
+                            <constraint firstItem="n2D-Fd-aSZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="saU-YT-0Hb"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="calcButon" destination="Ve4-Mz-qS7" id="UPd-2Z-3fK"/>
+                        <outlet property="sliderView" destination="6eh-Gx-AB6" id="UEh-jL-0Yh"/>
+                        <outlet property="timelabel" destination="8Ns-pc-9Bw" id="IZJ-ci-OO1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="113.83928571428571"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
