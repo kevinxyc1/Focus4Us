@@ -16,26 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="9uz-GZ-zvf">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="QEz-CO-J29">
+                                <rect key="frame" x="107" y="206" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Focus4us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="34" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZTB-G7-ISE">
-                                <rect key="frame" x="70" y="404.5" width="274.5" height="87"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="67"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="9uz-GZ-zvf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="BmN-QB-SNH"/>
-                            <constraint firstItem="9uz-GZ-zvf" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="gw2-bV-Dzc"/>
-                            <constraint firstItem="9uz-GZ-zvf" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="i4C-xd-1uj"/>
-                            <constraint firstItem="ZTB-G7-ISE" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="jC9-ww-JFT"/>
-                            <constraint firstItem="ZTB-G7-ISE" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="n7G-dd-6BX"/>
-                            <constraint firstAttribute="bottom" secondItem="9uz-GZ-zvf" secondAttribute="bottom" id="ytL-xJ-v0D"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -44,7 +31,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchScreen" width="1080" height="1920"/>
+        <image name="LaunchScreen" width="200" height="200"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
