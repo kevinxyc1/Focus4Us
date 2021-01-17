@@ -80,10 +80,14 @@ class ViewController: UIViewController {
     
     // When button is pressed to calculate time
     @IBAction func CalcTime(_ sender: UIButton) {
-        
-//        planView.subviews.forEach({ $0.removeFromSuperview() })
+        if (scView != nil) {
+            scView!.subviews.forEach({ $0.removeFromSuperview() })
+            scView!.removeFromSuperview()
+        }
+        //planView.subviews.forEach({ $0.removeFromSuperview() })
         scView = UIScrollView(frame: CGRect(x: 0, y: 30, width: view.bounds.width, height: 250))
         planView.addSubview(scView!)
+        
         scView!.backgroundColor = UIColor.clear
             scView!.translatesAutoresizingMaskIntoConstraints = false
         

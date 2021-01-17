@@ -24,7 +24,22 @@ struct MinutesManager{
     }
     
     func GetArr() -> [String]{
-        return ["Study for 20M","Take a 10M break","Continue study for 15M","Take a break for 10M","Study another 20M","You are done"]
+        if (currentMinuts == 30) {
+            return ["Study for 30M"]
+        } else if (currentMinuts == 60){
+            return ["Study for 30M", "Break for 2M","Study for 28M"]
+        } else if (currentMinuts == 90){
+            return ["Study for 30M", "Break for 2M","Study for 28M", "Study for 30M", "Break for 2M","Study for 28M"]
+        } else if (currentMinuts == 120){
+            return ["Study for 30M", "Break for 5M","Study for 30M","Break for 10M", "Study for 45M"]
+        } else if (currentMinuts == 150){
+            return ["Study for 30M", "Break for 2M","Study for 35M","Break for 3M","Study for 30M","Break for 10M","Study for 40M"]
+        } else if (currentMinuts == 180){
+            return ["Study for 30M", "Break for 2M","Study for 35M","Break for 3M","Study for 40M", "Break for 5M","Study for 30M","Break for 5M","Study for 30M"]
+        } else {
+            return ["Study for 30M", "Break for 2M","Study for 35M","Break for 3M","Study for 40M", "Break for 5M","Study for 30M","Break for 5M","Study for 30M","Break for 5M","Study for 25M"]
+        }
+        
     }
     
 }

@@ -119,53 +119,49 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kki-K7-M02" userLabel="PLAN">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="432"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="x2x-98-c0x">
-                                                <rect key="frame" x="49.5" y="364" width="315" height="38"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNS-Sl-RHe">
-                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="38"/>
-                                                        <color key="backgroundColor" name="bg-darkblue"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="150" id="ag1-AL-yj7"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                                        <state key="normal" title="Start Timing">
-                                                            <color key="titleColor" systemColor="systemBlueColor"/>
-                                                        </state>
-                                                        <connections>
-                                                            <segue destination="ym7-O1-Hpp" kind="show" id="ZDs-9R-71Y"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7aG-9o-h2h">
-                                                        <rect key="frame" x="165" y="0.0" width="150" height="38"/>
-                                                        <color key="backgroundColor" name="bg-darkblue"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="150" id="cJa-GV-gPK"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                                        <state key="normal" title="Enter chat room">
-                                                            <color key="titleColor" systemColor="systemBlueColor"/>
-                                                        </state>
-                                                        <connections>
-                                                            <segue destination="iB8-cb-nBT" kind="show" id="2SD-LG-ftV"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="x2x-98-c0x" secondAttribute="bottom" constant="30" id="YJ5-Zk-91b"/>
-                                            <constraint firstItem="x2x-98-c0x" firstAttribute="centerX" secondItem="kki-K7-M02" secondAttribute="centerX" id="qe1-j3-Toh"/>
-                                        </constraints>
                                     </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="x2x-98-c0x">
+                                        <rect key="frame" x="49.5" y="344" width="315" height="38"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNS-Sl-RHe">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="38"/>
+                                                <color key="backgroundColor" name="bg-darkblue"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="ag1-AL-yj7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                                <state key="normal" title="Start Timing">
+                                                    <color key="titleColor" systemColor="systemBlueColor"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="ym7-O1-Hpp" kind="show" id="ZDs-9R-71Y"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7aG-9o-h2h">
+                                                <rect key="frame" x="165" y="0.0" width="150" height="38"/>
+                                                <color key="backgroundColor" name="bg-darkblue"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="cJa-GV-gPK"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                                <state key="normal" title="Enter chat room">
+                                                    <color key="titleColor" systemColor="systemBlueColor"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="iB8-cb-nBT" kind="show" id="2SD-LG-ftV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="kki-K7-M02" firstAttribute="leading" secondItem="1Wh-0t-XY8" secondAttribute="leading" id="E3M-Xu-m5f"/>
                                     <constraint firstAttribute="bottom" secondItem="kki-K7-M02" secondAttribute="bottom" id="QcZ-B3-f0B"/>
                                     <constraint firstAttribute="trailing" secondItem="kki-K7-M02" secondAttribute="trailing" id="Vt5-MF-4ks"/>
+                                    <constraint firstItem="x2x-98-c0x" firstAttribute="centerX" secondItem="1Wh-0t-XY8" secondAttribute="centerX" id="X3f-Td-FgG"/>
+                                    <constraint firstAttribute="bottom" secondItem="x2x-98-c0x" secondAttribute="bottom" constant="50" id="bG5-au-4Mo"/>
                                     <constraint firstItem="kki-K7-M02" firstAttribute="top" secondItem="1Wh-0t-XY8" secondAttribute="top" id="c8s-BH-7GC"/>
                                 </constraints>
                             </view>
@@ -201,32 +197,60 @@
         <!--Individual Study-->
         <scene sceneID="3zl-jk-mqx">
             <objects>
-                <viewController id="ym7-O1-Hpp" customClass="ChatViewController" customModule="Focus4us" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ym7-O1-Hpp" customClass="View" customModule="Focus4us" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KwL-jf-tjS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A9U-Ta-vwF">
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A9U-Ta-vwF">
                                 <rect key="frame" x="0.0" y="34" width="414" height="828"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Study Sprint: 00:28:59" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6A-Oq-6o2">
-                                        <rect key="frame" x="36" y="392" width="343" height="45"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40.5" id="wWz-hW-j1P"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="23"/>
-                                        <color key="textColor" red="0.058823529409999999" green="0.29803921570000003" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iT-2C-APk">
+                                        <rect key="frame" x="92" y="163" width="230" height="137"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your next break is in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3P-TX-lYe">
+                                        <rect key="frame" x="89" y="136" width="248" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sprint 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAU-0n-ed4">
+                                        <rect key="frame" x="151" y="293" width="113" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstItem="q6A-Oq-6o2" firstAttribute="centerY" secondItem="A9U-Ta-vwF" secondAttribute="centerY" id="BLc-mx-gZ5"/>
-                                    <constraint firstItem="q6A-Oq-6o2" firstAttribute="centerY" secondItem="A9U-Ta-vwF" secondAttribute="centerY" id="Y5i-Zk-ytr"/>
-                                    <constraint firstItem="q6A-Oq-6o2" firstAttribute="leading" secondItem="A9U-Ta-vwF" secondAttribute="leading" constant="45" id="lUo-Wb-hhT"/>
-                                    <constraint firstItem="q6A-Oq-6o2" firstAttribute="centerX" secondItem="A9U-Ta-vwF" secondAttribute="centerX" id="ql5-cQ-qeb"/>
-                                </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJ8-TM-MYk">
+                                <rect key="frame" x="150" y="445" width="113" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.25098425149999998" green="0.25097340350000003" blue="0.25098079439999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Start Sprint">
+                                    <color key="titleColor" red="0.97808007919999995" green="1" blue="0.97035133179999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="StartButtonTapped:" destination="ym7-O1-Hpp" eventType="touchUpInside" id="2GY-Ym-eiV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7S-kZ-bLc">
+                                <rect key="frame" x="150" y="577" width="113" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.25098425149999998" green="0.25097340350000003" blue="0.25098079439999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Pause">
+                                    <color key="titleColor" red="0.97808007919999995" green="1" blue="0.97035133179999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="PauseButtonTapped:" destination="ym7-O1-Hpp" eventType="touchUpInside" id="ak4-hk-UFz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JyK-bk-kiU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -239,15 +263,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Individual Study" id="tjz-rv-UFd"/>
+                    <connections>
+                        <outlet property="timerLabel" destination="9iT-2C-APk" id="qii-Pk-kro"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zpf-7y-mdE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1051" y="299"/>
+            <point key="canvasLocation" x="1050.7246376811595" y="298.66071428571428"/>
         </scene>
         <!--Chat room-->
         <scene sceneID="WgV-Hx-qzq">
             <objects>
-                <viewController id="iB8-cb-nBT" sceneMemberID="viewController">
+                <viewController id="iB8-cb-nBT" customClass="ChatViewController" customModule="Focus4us" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="smb-iJ-exL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -258,18 +285,26 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yLM-cj-q05">
                                 <rect key="frame" x="0.0" y="762" width="414" height="100"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Study Sprint: 00:28:59" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JH6-en-Mhi">
-                                        <rect key="frame" x="44.5" y="30" width="325.5" height="40.5"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="31"/>
-                                        <color key="textColor" red="0.058823529409999999" green="0.29803921570000003" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dak-UF-YCr">
+                                        <rect key="frame" x="251" y="36" width="82" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.25098425149999998" green="0.25097340350000003" blue="0.25098079439999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Start">
+                                            <color key="titleColor" red="0.97808007919999995" green="1" blue="0.97035133179999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ChatStartButtonTapped:" destination="iB8-cb-nBT" eventType="touchUpInside" id="8rS-Yu-fJO"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:30:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9n-wa-Is6">
+                                        <rect key="frame" x="58" y="36" width="141" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstItem="JH6-en-Mhi" firstAttribute="centerY" secondItem="yLM-cj-q05" secondAttribute="centerY" id="7Dj-7p-i8n"/>
-                                    <constraint firstItem="JH6-en-Mhi" firstAttribute="centerX" secondItem="yLM-cj-q05" secondAttribute="centerX" id="WoN-Pp-F5v"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2wZ-AG-7EU"/>
@@ -287,11 +322,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Chat room" id="omi-gm-Ja6"/>
+                    <connections>
+                        <outlet property="timerLabelChat" destination="l9n-wa-Is6" id="W5C-ui-ZbM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CUm-22-Y4j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1741" y="317"/>
-            <point key="canvasLocation" x="1086.9565217391305" y="312.72321428571428"/>
+            <point key="canvasLocation" x="1740.5797101449277" y="316.07142857142856"/>
         </scene>
     </scenes>
     <resources>
