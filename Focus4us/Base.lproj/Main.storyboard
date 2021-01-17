@@ -51,7 +51,7 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6eh-Gx-AB6" userLabel="TIME SLIDER">
                                         <rect key="frame" x="32" y="18" width="300" height="300"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" name="bg-white"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="300" id="OgZ-h4-7rq"/>
                                             <constraint firstAttribute="width" constant="300" id="XaD-mF-Ocm"/>
@@ -77,7 +77,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="bg-white"/>
                                 <constraints>
                                     <constraint firstItem="6eh-Gx-AB6" firstAttribute="centerX" secondItem="l2z-GF-ScI" secondAttribute="centerX" id="DVj-Yy-Uis"/>
                                     <constraint firstItem="6eh-Gx-AB6" firstAttribute="centerY" secondItem="l2z-GF-ScI" secondAttribute="centerY" id="Gv1-y3-aWB"/>
@@ -151,9 +151,9 @@
         <namedColor name="bg-lightblue">
             <color red="0.9137254901960784" green="0.95686274509803926" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="bg-white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
