@@ -119,7 +119,46 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kki-K7-M02" userLabel="PLAN">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="432"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="x2x-98-c0x">
+                                                <rect key="frame" x="49.5" y="364" width="315" height="38"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNS-Sl-RHe">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="38"/>
+                                                        <color key="backgroundColor" name="bg-darkblue"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="150" id="ag1-AL-yj7"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                                        <state key="normal" title="Start Timing">
+                                                            <color key="titleColor" systemColor="systemBlueColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="ym7-O1-Hpp" kind="show" id="ZDs-9R-71Y"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7aG-9o-h2h">
+                                                        <rect key="frame" x="165" y="0.0" width="150" height="38"/>
+                                                        <color key="backgroundColor" name="bg-darkblue"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="150" id="cJa-GV-gPK"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                                        <state key="normal" title="Enter chat room">
+                                                            <color key="titleColor" systemColor="systemBlueColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="iB8-cb-nBT" kind="show" id="2SD-LG-ftV"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="x2x-98-c0x" secondAttribute="bottom" constant="30" id="YJ5-Zk-91b"/>
+                                            <constraint firstItem="x2x-98-c0x" firstAttribute="centerX" secondItem="kki-K7-M02" secondAttribute="centerX" id="qe1-j3-Toh"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -130,20 +169,6 @@
                                     <constraint firstItem="kki-K7-M02" firstAttribute="top" secondItem="1Wh-0t-XY8" secondAttribute="top" id="c8s-BH-7GC"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNS-Sl-RHe">
-                                <rect key="frame" x="107" y="794" width="200" height="38"/>
-                                <color key="backgroundColor" name="bg-darkblue"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="4Fg-l5-93n"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                <state key="normal" title="Start Timing">
-                                    <color key="titleColor" systemColor="systemBlueColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="ym7-O1-Hpp" kind="show" id="ZDs-9R-71Y"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
@@ -151,12 +176,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Wh-0t-XY8" secondAttribute="trailing" id="34r-V9-2vg"/>
                             <constraint firstItem="l2z-GF-ScI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="74c-dh-raP"/>
                             <constraint firstItem="1Wh-0t-XY8" firstAttribute="top" secondItem="l2z-GF-ScI" secondAttribute="bottom" id="8Sy-AZ-I0t"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NNS-Sl-RHe" secondAttribute="bottom" constant="30" id="Bv9-cZ-eyb"/>
                             <constraint firstItem="l2z-GF-ScI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="DGF-qZ-ZJZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1Wh-0t-XY8" secondAttribute="bottom" id="KJp-gK-fHe"/>
                             <constraint firstItem="n2D-Fd-aSZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PWl-hf-4ue"/>
                             <constraint firstItem="n2D-Fd-aSZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="UVq-1F-DnC"/>
-                            <constraint firstItem="NNS-Sl-RHe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YUC-qu-KoG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l2z-GF-ScI" secondAttribute="trailing" constant="25" id="ceG-qe-GM2"/>
                             <constraint firstItem="n2D-Fd-aSZ" firstAttribute="bottom" secondItem="l2z-GF-ScI" secondAttribute="bottom" constant="-60" id="dYA-rg-ZC5"/>
                             <constraint firstItem="1Wh-0t-XY8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gGA-EX-Xvh"/>
@@ -214,10 +237,59 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zpf-7y-mdE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1088" y="313"/>
+            <point key="canvasLocation" x="1051" y="299"/>
+        </scene>
+        <!--Chat room-->
+        <scene sceneID="WgV-Hx-qzq">
+            <objects>
+                <viewController id="iB8-cb-nBT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="smb-iJ-exL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ios8-instant-message-chat-ui-preview-screenshot" translatesAutoresizingMaskIntoConstraints="NO" id="XpH-Oc-9GG">
+                                <rect key="frame" x="0.0" y="88" width="414" height="674"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yLM-cj-q05">
+                                <rect key="frame" x="0.0" y="762" width="414" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Study Sprint: 00:28:59" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JH6-en-Mhi">
+                                        <rect key="frame" x="44.5" y="30" width="325.5" height="40.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="31"/>
+                                        <color key="textColor" red="0.058823529409999999" green="0.29803921570000003" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="JH6-en-Mhi" firstAttribute="centerY" secondItem="yLM-cj-q05" secondAttribute="centerY" id="7Dj-7p-i8n"/>
+                                    <constraint firstItem="JH6-en-Mhi" firstAttribute="centerX" secondItem="yLM-cj-q05" secondAttribute="centerX" id="WoN-Pp-F5v"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2wZ-AG-7EU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XpH-Oc-9GG" firstAttribute="leading" secondItem="2wZ-AG-7EU" secondAttribute="leading" id="4bO-TF-cit"/>
+                            <constraint firstItem="2wZ-AG-7EU" firstAttribute="trailing" secondItem="XpH-Oc-9GG" secondAttribute="trailing" id="CPs-r8-tOE"/>
+                            <constraint firstItem="2wZ-AG-7EU" firstAttribute="bottom" secondItem="yLM-cj-q05" secondAttribute="bottom" id="N2u-4Q-LXv"/>
+                            <constraint firstItem="yLM-cj-q05" firstAttribute="centerX" secondItem="smb-iJ-exL" secondAttribute="centerX" id="QFB-au-bUY"/>
+                            <constraint firstItem="2wZ-AG-7EU" firstAttribute="trailing" secondItem="yLM-cj-q05" secondAttribute="trailing" id="VpQ-k7-Jba"/>
+                            <constraint firstItem="XpH-Oc-9GG" firstAttribute="top" secondItem="2wZ-AG-7EU" secondAttribute="top" id="bgt-GC-xOs"/>
+                            <constraint firstItem="2wZ-AG-7EU" firstAttribute="bottom" secondItem="XpH-Oc-9GG" secondAttribute="bottom" constant="100" id="m0X-eR-uBq"/>
+                            <constraint firstItem="yLM-cj-q05" firstAttribute="top" secondItem="XpH-Oc-9GG" secondAttribute="bottom" id="to0-dQ-qC2"/>
+                            <constraint firstItem="yLM-cj-q05" firstAttribute="leading" secondItem="2wZ-AG-7EU" secondAttribute="leading" id="u2T-hT-j1E"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Chat room" id="omi-gm-Ja6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CUm-22-Y4j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1741" y="317"/>
         </scene>
     </scenes>
     <resources>
+        <image name="ios8-instant-message-chat-ui-preview-screenshot" width="714" height="1142"/>
         <namedColor name="bg-darkblue">
             <color red="0.5725490196078431" green="0.69019607843137254" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
