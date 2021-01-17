@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,7 +22,7 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xdo-Ql-nie">
                                         <rect key="frame" x="138" y="0.0" width="276" height="370"/>
-                                        <color key="backgroundColor" red="0.058823529411764705" green="0.29803921568627451" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" name="bg-darkblue"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="276" id="d3K-AH-I5J"/>
                                         </constraints>
@@ -32,7 +33,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.9137254901960784" green="0.95686274509803915" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" name="bg-lightblue"/>
                                 <constraints>
                                     <constraint firstItem="Xdo-Ql-nie" firstAttribute="top" secondItem="n2D-Fd-aSZ" secondAttribute="top" id="ESb-xC-DJg"/>
                                     <constraint firstAttribute="height" constant="370" id="bi6-5f-nkH"/>
@@ -144,6 +145,12 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="bg-darkblue">
+            <color red="0.5725490196078431" green="0.69019607843137254" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="bg-lightblue">
+            <color red="0.9137254901960784" green="0.95686274509803926" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
