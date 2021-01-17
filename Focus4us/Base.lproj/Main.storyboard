@@ -67,7 +67,6 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6eh-Gx-AB6" userLabel="TIME SLIDER">
                                         <rect key="frame" x="57" y="21" width="250" height="250"/>
-                                        <color key="backgroundColor" name="bg-white"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="250" id="OgZ-h4-7rq"/>
                                             <constraint firstAttribute="width" constant="250" id="XaD-mF-Ocm"/>

@@ -50,8 +50,8 @@ class ViewController: UIViewController {
         circularSlider.filledArcLineCap = .round
         circularSlider.currentValue = 10
         circularSlider.lineWidth = 30
-        circularSlider.filledColor = UIColor(red: 15.0/255, green: 76.0/255, blue: 129.0/255, alpha: 1.0)
-        circularSlider.unfilledColor = UIColor(red: 146.0/255, green: 176.0/255, blue: 193.0/255, alpha: 1.0)
+        circularSlider.filledColor = UIColor(red: 146.0/255, green: 176.0/255, blue: 202.0/255, alpha: 1.0)
+        circularSlider.unfilledColor = UIColor(red: 233.0/255, green: 244.0/255, blue: 255.0/255, alpha: 1.0)
         // add to view
         sliderView.addSubview(circularSlider)
         // NOTE: create and set a transform to rotate the arc so the white space is centered at the bottom
