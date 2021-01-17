@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="V33-IR-oaj">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -9,7 +9,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="YM0-sg-pYP">
+            <objects>
+                <navigationController id="V33-IR-oaj" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gsr-mj-em7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lgl-sm-TcK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TQ4-pL-12n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-807" y="313"/>
+        </scene>
+        <!--Study Time-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Focus4us" customModuleProvider="target" sceneMemberID="viewController">
@@ -47,28 +63,28 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l2z-GF-ScI" userLabel="SLIDER_AND_BUTON">
-                                <rect key="frame" x="25" y="94" width="364" height="336"/>
+                                <rect key="frame" x="25" y="138" width="364" height="292"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6eh-Gx-AB6" userLabel="TIME SLIDER">
-                                        <rect key="frame" x="32" y="18" width="300" height="300"/>
+                                        <rect key="frame" x="57" y="21" width="250" height="250"/>
                                         <color key="backgroundColor" name="bg-white"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="300" id="OgZ-h4-7rq"/>
-                                            <constraint firstAttribute="width" constant="300" id="XaD-mF-Ocm"/>
+                                            <constraint firstAttribute="height" constant="250" id="OgZ-h4-7rq"/>
+                                            <constraint firstAttribute="width" constant="250" id="XaD-mF-Ocm"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Fd1-fx-zOJ">
-                                        <rect key="frame" x="104.5" y="130.5" width="155" height="75"/>
+                                        <rect key="frame" x="116.5" y="110" width="131" height="72"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 M" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ns-pc-9Bw">
-                                                <rect key="frame" x="0.0" y="0.0" width="155" height="29"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="131" height="29"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ve4-Mz-qS7">
-                                                <rect key="frame" x="0.0" y="37" width="155" height="38"/>
-                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                                <rect key="frame" x="0.0" y="37" width="131" height="35"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                 <state key="normal" title="Create Time Plan"/>
                                                 <connections>
                                                     <action selector="CalcTime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vyy-MM-g0Y"/>
@@ -115,6 +131,20 @@
                                     <constraint firstItem="kki-K7-M02" firstAttribute="top" secondItem="1Wh-0t-XY8" secondAttribute="top" id="c8s-BH-7GC"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNS-Sl-RHe">
+                                <rect key="frame" x="107" y="794" width="200" height="38"/>
+                                <color key="backgroundColor" name="bg-darkblue"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="4Fg-l5-93n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <state key="normal" title="Enter Chat Room">
+                                    <color key="titleColor" systemColor="systemBlueColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ym7-O1-Hpp" kind="show" id="ZDs-9R-71Y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
@@ -122,16 +152,19 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Wh-0t-XY8" secondAttribute="trailing" id="34r-V9-2vg"/>
                             <constraint firstItem="l2z-GF-ScI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="74c-dh-raP"/>
                             <constraint firstItem="1Wh-0t-XY8" firstAttribute="top" secondItem="l2z-GF-ScI" secondAttribute="bottom" id="8Sy-AZ-I0t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NNS-Sl-RHe" secondAttribute="bottom" constant="30" id="Bv9-cZ-eyb"/>
                             <constraint firstItem="l2z-GF-ScI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="DGF-qZ-ZJZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1Wh-0t-XY8" secondAttribute="bottom" id="KJp-gK-fHe"/>
                             <constraint firstItem="n2D-Fd-aSZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PWl-hf-4ue"/>
                             <constraint firstItem="n2D-Fd-aSZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="UVq-1F-DnC"/>
+                            <constraint firstItem="NNS-Sl-RHe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YUC-qu-KoG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l2z-GF-ScI" secondAttribute="trailing" constant="25" id="ceG-qe-GM2"/>
                             <constraint firstItem="n2D-Fd-aSZ" firstAttribute="bottom" secondItem="l2z-GF-ScI" secondAttribute="bottom" constant="-60" id="dYA-rg-ZC5"/>
                             <constraint firstItem="1Wh-0t-XY8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gGA-EX-Xvh"/>
                             <constraint firstItem="n2D-Fd-aSZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="saU-YT-0Hb"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Study Time" id="T1Q-Wy-a1y"/>
                     <connections>
                         <outlet property="calcButon" destination="Ve4-Mz-qS7" id="UPd-2Z-3fK"/>
                         <outlet property="planView" destination="kki-K7-M02" id="esu-YE-WkY"/>
@@ -141,7 +174,32 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="121.73913043478262" y="113.83928571428571"/>
+            <point key="canvasLocation" x="248" y="313"/>
+        </scene>
+        <!--Chat Room-->
+        <scene sceneID="3zl-jk-mqx">
+            <objects>
+                <viewController id="ym7-O1-Hpp" customClass="ChatViewController" customModule="Focus4us" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KwL-jf-tjS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6XI-67-88b">
+                                <rect key="frame" x="185" y="397" width="33" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JyK-bk-kiU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Chat Room" id="tjz-rv-UFd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zpf-7y-mdE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1088" y="313"/>
         </scene>
     </scenes>
     <resources>
@@ -154,6 +212,12 @@
         <namedColor name="bg-white">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

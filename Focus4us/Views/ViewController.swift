@@ -28,13 +28,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //UInavbar color
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 146.0/255, green: 176.0/255, blue: 193.0/255, alpha: 1.0)
+        self.navigationController?.navigationBar.isTranslucent = true
+        
         // Calculate button color
         calcButon.setTitleColor(UIColor(red: 15.0/255, green: 76.0/255, blue: 129.0/255, alpha: 1.0), for: .normal)
         
         // CODE FOR SLIDER
         //---------------------------------------------------------------------------------------------
         // init slider view
-        let frame = CGRect(x: 0, y:0, width: sliderView.frame.width, height: sliderView.frame.height)
+        let frame = CGRect(x: 0, y:0, width: (sliderView.frame.width), height: (sliderView.frame.height))
         let circularSlider = CircularSlider(frame: frame)
         
         // setup target to watch for value change
@@ -113,6 +117,9 @@ class ViewController: UIViewController {
         
         
     }
+    
+    // Button to enter the chatroom
+    
     
 }
 

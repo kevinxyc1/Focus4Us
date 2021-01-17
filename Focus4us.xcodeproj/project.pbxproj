@@ -32,6 +32,7 @@
 		EAAE433D25B35CDB0029E5C9 /* GradientCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE432F25B35CDB0029E5C9 /* GradientCircularSlider.swift */; };
 		EAAE433E25B35CDB0029E5C9 /* GradientCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE432F25B35CDB0029E5C9 /* GradientCircularSlider.swift */; };
 		EAAE434825B39C540029E5C9 /* MinutesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE434725B39C540029E5C9 /* MinutesManager.swift */; };
+		EAAE435225B3E3960029E5C9 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE435125B3E3960029E5C9 /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		EAAE432E25B35CDB0029E5C9 /* CircularSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularSlider.swift; sourceTree = "<group>"; };
 		EAAE432F25B35CDB0029E5C9 /* GradientCircularSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientCircularSlider.swift; sourceTree = "<group>"; };
 		EAAE434725B39C540029E5C9 /* MinutesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinutesManager.swift; sourceTree = "<group>"; };
+		EAAE435125B3E3960029E5C9 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +129,7 @@
 				EAAE42DD25B344700029E5C9 /* AppDelegate.swift */,
 				EAAE42DF25B344700029E5C9 /* SceneDelegate.swift */,
 				EAAE434625B39C330029E5C9 /* Models */,
-				EAAE42E125B344700029E5C9 /* ViewController.swift */,
+				EAAE435025B3E3700029E5C9 /* Views */,
 				EAAE42E325B344700029E5C9 /* Main.storyboard */,
 				EAAE42E925B344710029E5C9 /* Assets.xcassets */,
 				EAAE42EB25B344710029E5C9 /* LaunchScreen.storyboard */,
@@ -173,6 +175,15 @@
 				EAAE434725B39C540029E5C9 /* MinutesManager.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		EAAE435025B3E3700029E5C9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EAAE42E125B344700029E5C9 /* ViewController.swift */,
+				EAAE435125B3E3960029E5C9 /* ChatViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +318,7 @@
 			files = (
 				EAAE433625B35CDB0029E5C9 /* CircularSliderHandle.swift in Sources */,
 				EAAE433C25B35CDB0029E5C9 /* GradientCircularSlider.swift in Sources */,
+				EAAE435225B3E3960029E5C9 /* ChatViewController.swift in Sources */,
 				EAAE42E225B344700029E5C9 /* ViewController.swift in Sources */,
 				EAAE434825B39C540029E5C9 /* MinutesManager.swift in Sources */,
 				EAAE42E825B344700029E5C9 /* Focus4us.xcdatamodeld in Sources */,
