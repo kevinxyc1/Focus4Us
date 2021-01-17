@@ -137,7 +137,7 @@
                                     <constraint firstAttribute="width" constant="200" id="4Fg-l5-93n"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                <state key="normal" title="Enter Chat Room">
+                                <state key="normal" title="Start Timing">
                                     <color key="titleColor" systemColor="systemBlueColor"/>
                                 </state>
                                 <connections>
@@ -175,7 +175,7 @@
             </objects>
             <point key="canvasLocation" x="248" y="313"/>
         </scene>
-        <!--Chat Room-->
+        <!--Individual Study-->
         <scene sceneID="3zl-jk-mqx">
             <objects>
                 <viewController id="ym7-O1-Hpp" customClass="ChatViewController" customModule="Focus4us" customModuleProvider="target" sceneMemberID="viewController">
@@ -183,14 +183,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ios8-instant-message-chat-ui-preview-screenshot" translatesAutoresizingMaskIntoConstraints="NO" id="2Rq-0S-CFb">
-                                <rect key="frame" x="0.0" y="88" width="414" height="664"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A9U-Ta-vwF">
-                                <rect key="frame" x="0.0" y="752" width="414" height="110"/>
+                                <rect key="frame" x="0.0" y="34" width="414" height="828"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Study Sprint: 00:28:59" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6A-Oq-6o2">
-                                        <rect key="frame" x="44.5" y="35" width="325.5" height="40.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Study Sprint: 00:28:59" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6A-Oq-6o2">
+                                        <rect key="frame" x="44.5" y="394" width="325.5" height="40.5"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="31"/>
                                         <color key="textColor" red="0.058823529409999999" green="0.29803921570000003" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -199,24 +196,21 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="q6A-Oq-6o2" firstAttribute="centerY" secondItem="A9U-Ta-vwF" secondAttribute="centerY" id="BLc-mx-gZ5"/>
-                                    <constraint firstItem="q6A-Oq-6o2" firstAttribute="centerX" secondItem="A9U-Ta-vwF" secondAttribute="centerX" id="xtA-P4-Urk"/>
+                                    <constraint firstItem="q6A-Oq-6o2" firstAttribute="centerY" secondItem="A9U-Ta-vwF" secondAttribute="centerY" id="Y5i-Zk-ytr"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JyK-bk-kiU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="JyK-bk-kiU" firstAttribute="bottom" secondItem="2Rq-0S-CFb" secondAttribute="bottom" constant="110" id="3LF-33-Xfz"/>
-                            <constraint firstItem="A9U-Ta-vwF" firstAttribute="top" secondItem="2Rq-0S-CFb" secondAttribute="bottom" id="84z-dq-7Iq"/>
+                            <constraint firstItem="A9U-Ta-vwF" firstAttribute="centerX" secondItem="KwL-jf-tjS" secondAttribute="centerX" id="11X-Qh-fgj"/>
+                            <constraint firstItem="A9U-Ta-vwF" firstAttribute="centerY" secondItem="KwL-jf-tjS" secondAttribute="centerY" id="1Xv-6q-zOe"/>
                             <constraint firstItem="JyK-bk-kiU" firstAttribute="trailing" secondItem="A9U-Ta-vwF" secondAttribute="trailing" id="Jfl-9P-Zls"/>
                             <constraint firstItem="A9U-Ta-vwF" firstAttribute="leading" secondItem="JyK-bk-kiU" secondAttribute="leading" id="PUy-pi-sFf"/>
-                            <constraint firstItem="2Rq-0S-CFb" firstAttribute="leading" secondItem="JyK-bk-kiU" secondAttribute="leading" id="T7V-Md-fjb"/>
-                            <constraint firstItem="2Rq-0S-CFb" firstAttribute="top" secondItem="JyK-bk-kiU" secondAttribute="top" id="Uke-2q-v03"/>
-                            <constraint firstItem="JyK-bk-kiU" firstAttribute="trailing" secondItem="2Rq-0S-CFb" secondAttribute="trailing" id="eNn-B2-DmK"/>
                             <constraint firstItem="JyK-bk-kiU" firstAttribute="bottom" secondItem="A9U-Ta-vwF" secondAttribute="bottom" id="yCe-ZX-nrg"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Chat Room" id="tjz-rv-UFd"/>
+                    <navigationItem key="navigationItem" title="Individual Study" id="tjz-rv-UFd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zpf-7y-mdE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -224,7 +218,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ios8-instant-message-chat-ui-preview-screenshot" width="714" height="1142"/>
         <namedColor name="bg-darkblue">
             <color red="0.5725490196078431" green="0.69019607843137254" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
