@@ -1,0 +1,3 @@
+# Focus4Us
+
+TimeFlow is an iOS-based mobile application that helps people optimize their learning efficiency. Further, this application allows setting an amount of time they want to study. For the first time, the user is prompted to do a Schulte Grid attention test. After the first couple of learning cycles, every time the user sets a period of time to study, the app will automatically split the bigger task into smaller tasks. For example, if a user wants to study for 3 hours. The app may split it into six 30-minute tasks with break time inserted in between. More specifically, the 30-minute time period was learnt by the app to ensure the user has optimal learning efficiency.
